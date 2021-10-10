@@ -1,0 +1,189 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+#content-wrapper {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+    background-color: var(--chatboxColor);
+    transition: 0.2s;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+  0% {
+      opacity: 0%;
+  }
+  42% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+footer {
+  
+  position: relative;
+  display: block;
+}
+/* label {
+  float: left;
+} */
+
+.neonButton {
+  float: right;
+  position: relative;
+  background-color: var(--neonButtonColor);
+
+  overflow: hidden;
+  transition: 0.2s;
+  animation: buttonFadein 5s;
+
+  margin: 0.35em 0.25em;
+  border: none;
+  padding: var(--chatboxPaddingY) var(--chatboxPaddingX);
+  font-size: calc(0.8 * var(--textSize));
+  border-radius: var(--textBorderRadius);
+  transform: scale(1.16) translateY(12%);
+  right: var(--chatboxPaddingX);
+}
+
+.neonButton img {
+  position: relative;
+  transform: translateY(11%) translateX(-5%);
+}
+
+.neonButton:hover {
+  color: #ffffff;
+  background: var(--neonButtonHoverColor);
+  /* box-shadow: 0 0 10px var(--neonButtonHoverColor), 0 0 40px var(--neonButtonHoverColor), 0 0 80px var(--neonButtonHoverColorZ); */
+  transition-delay: 0.8s;
+}
+
+
+
+.neonButton span{
+  position: absolute;
+  display: block;
+}
+
+.neonButton span:nth-child(1)  {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: var(--neonLineWidth);
+  background: linear-gradient(90deg,transparent,var(--neonButtonHoverColor));
+}
+
+.neonButton:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.3s;
+}
+
+.neonButton span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: var(--neonLineWidth);
+  height: 100%;
+  background: linear-gradient(180deg,transparent,var(--neonButtonHoverColor));
+}
+
+.neonButton:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.neonButton span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: var(--neonLineWidth);
+  background: linear-gradient(270deg, transparent,var(--neonButtonHoverColor));
+}
+
+.neonButton:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.3s;
+  transition-delay: 0.4s;
+}
+
+.neonButton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: var(--neonLineWidth);
+  height: 100%;
+  background: linear-gradient(360deg,transparent,var(--neonButtonHoverColor));
+}
+
+.neonButton:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.3s;
+  transition-delay: 0.6s;
+}
+
+
+
+
+
+#chatboxSpan {
+  display: block;
+  /* overflow: hidden; */
+  padding: 0.25em var(--chatboxPaddingX);
+  padding-right: 5em;
+}
+
+#chatboxInput {
+  width: 100%;
+
+  font-size: calc(.8 * var(--textSize));
+/*  font-family: 'Space Mono', monospace;*/
+  margin: 0.25em;
+  color: var(--menu-text-color);
+  background: var(--neonButtonColor);
+  border-radius: var(--textBorderRadius);
+  border: none;
+  padding: var(--chatboxPaddingY) var(--chatboxPaddingX);
+}
+
+
+@keyframes buttonFadein {
+    0% {
+        opacity: 0;
+    }
+    42% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:990px) {
+  /* footer {
+    bottom: -0.75em;
+  } */
+
+  #chatboxInput {
+      font-size: var(--textSizeMobile);
+  }
+
+  .neonButton {
+    transform: scale(1) translateY(0);
+  }
+
+  .neonButton .img {
+    transform: scale(0.55);
+  }
+}

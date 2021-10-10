@@ -1,0 +1,28 @@
+:root {
+    --menu-text-color: rgb(68, 130, 245);
+    --menu-text-hover-color: rgb(180, 206, 255);
+    --nav-background-color: rgba(62, 28, 28, 0.219);
+    --nav-menu-active-color: rgba(0, 0, 0, 0.8);
+    --p-text-color: rgb(0, 47, 255);
+    --nav-background-hover-color: rgba(255, 68, 0, 0.466);
+    --navHeight: 10vh;
+
+    /* NEON BUTTON */
+    --neonButtonColor: rgba(255, 68, 0, 0.5);
+    --neonButtonHoverColor: rgba(255, 68, 0, 0.75);
+    --neonLineWidth: 0.2em;
+
+
+    /* LANDING TEXTBOX */
+    --landingTextSpaceFromEdge: 1em;
+    --textboxPaddingY: 0.4em;
+    --textboxPaddingX: 1em;
+    --textSize: 175%;
+    --textSizeMobile: 115%;
+    --textBorderRadius: 0.5em;
+    --chatboxPaddingX: 0.5em;
+    --chatboxPaddingY: 0.25em;
+    --leftTextboxColor: rgba(100, 148, 237, 0.247);
+    --rightTextboxColor: rgba(255, 68, 0, 0.466);
+    --chatboxColor: rgba(62, 28, 28, 0.42);
+  }  

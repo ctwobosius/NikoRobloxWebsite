@@ -1,0 +1,115 @@
+.neonButton {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    /* padding: var(--textboxPaddingY) var(--textboxPaddingX); */
+    color: orangered;
+    background-color: rgba(255, 68, 0, 0.158);
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    animation: buttonFadein 5s;
+    vertical-align: bottom;
+    height: 2.25em;
+    width: 2.25em;
+
+
+    /* margin: var(--landingTextSpaceFromEdge); */
+    /* right: 0.5em; */
+    margin: 0.25em;
+    border-radius: 1vw;
+    float: right;
+
+
+    font-size: calc(.68 * var(--textSize));
+}
+
+.neonButton img {
+    padding-bottom: 25%;
+    position: relative;
+    /* transform: translateY(35%) translateX(35%); */
+}
+
+@keyframes buttonFadein {
+    0% {
+        opacity: 0%;
+    }
+    42% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.neonButton:hover {
+    color: #ffffff;
+    background: var(--neonButtonColor);
+    /* box-shadow: 0 0 10px var(--neonButtonColor), 0 0 40px var(--neonButtonColor), 0 0 80px var(--neonButtonColor); */
+    transition-delay: 0.8s;
+}
+
+/* NEON ANIMATION */
+
+.neonButton span{
+    position: absolute;
+    display: block;
+}
+
+.neonButton span:nth-child(1)  {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: var(--neonLineWidth);
+    background: linear-gradient(90deg,transparent,var(--neonButtonColor));
+}
+
+.neonButton:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.3s;
+}
+
+.neonButton span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: var(--neonLineWidth);
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--neonButtonColor));
+}
+
+.neonButton:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.neonButton span:nth-child(3) {
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: var(--neonLineWidth);
+    background: linear-gradient(270deg, transparent,var(--neonButtonColor));
+}
+
+.neonButton:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.3s;
+    transition-delay: 0.4s;
+}
+
+.neonButton span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: var(--neonLineWidth);
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--neonButtonColor));
+}
+
+.neonButton:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.3s;
+    transition-delay: 0.6s;
+}
+

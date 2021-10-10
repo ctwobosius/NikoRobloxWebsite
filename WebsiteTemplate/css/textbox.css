@@ -1,0 +1,97 @@
+.landingText {
+    animation-name: fadein;
+    animation-duration: 3s;
+    color: var(--p-text-color);
+    font-size: var(--textSize);
+    letter-spacing: 0.1em;
+    margin-top: 20vh;
+    margin-bottom: -20vh;
+    width: 100vw;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    32% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.textbox, .rightTextbox {
+    border-radius: var(--textBorderRadius);
+    display: inline-block;
+    margin: var(--landingTextSpaceFromEdge);
+    padding: var(--textboxPaddingY) var(--textboxPaddingX);
+    text-align: center;
+    background: var(--leftTextboxColor);
+    max-width: 75%;
+}
+
+.landingText br {
+    clear: both;
+}
+
+.rightTextbox {
+    color: var(--menu-text-color);
+    background: var(--rightTextboxColor);
+    float: right;
+    /* margin-right: calc(var(--landingTextSpaceFromEdge) * 2); */
+}
+
+#chat {
+    position: relative;
+    top: calc(-2 * var(--navHeight));
+    width: 100vw;
+    /* height: 120vh; */
+    /* overflow-x: none; */
+    padding: var(--textboxPaddingY) var(--textboxPaddingX);
+}
+
+
+
+
+/* #chatInput {
+
+    position: relative;
+
+
+    display: block;
+    width: auto;
+
+    font-family: 'Space Mono', monospace;
+    font-size: calc(.8 * var(--textSize));
+    margin: 0.25em;
+    color: var(--menu-text-color);
+    background: var(--neonButtonColor);
+    border-radius: var(--textBorderRadius);
+    border: none;
+    padding: 0.2em 0.5em;
+
+} */
+
+/* .mobileBreak {
+    display: none;
+} */
+
+/* MOBILE */
+@media screen and (max-width:990px) {
+    .landingText {
+        font-size: calc(var(--textSizeMobile) * 0.75);
+    }
+
+    .textbox, .rightTextbox {
+        margin: calc(var(--landingTextSpaceFromEdge) / 2);
+    }
+/* 
+    #chatInput {
+        float: left;
+    } */
+
+    /* .mobileBreak {
+        display: block;
+    } */
+}
