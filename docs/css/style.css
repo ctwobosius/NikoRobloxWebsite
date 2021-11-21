@@ -60,6 +60,38 @@ body {
   -ms-overflow-style: none;
 }
 
+#scroll {
+  position:fixed;
+  right: 10px;
+  background: rgba(0, 255, 42, 0.7);
+  width: 100px;
+  height: 100%;
+  top: 0;
+  opacity: 100%;
+}
+
+
+#scroll-path {
+  position:fixed;
+  right: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  width: 10px;
+  height: 100%;
+  top: 0;
+  opacity: 100%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
 #background {
   /* background-image: url("img/bg.jpg") no-repeat center bottom; */
   min-height: 100%;
