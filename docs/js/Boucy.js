@@ -18,7 +18,7 @@ addEventListener("mousemove", function() {
 });
 
 
-var grav = 0.99;
+var grav = 1;
 c.strokeWidth=5;
 function randomColor() {
   return (
@@ -84,7 +84,10 @@ function animate() {
       mousey < bal[i].y +50 &&
       bal[i].radius < 70){
         //bal[i].x += +1;
+        bal[i].dx += Math.random() * 5;
         bal[i].radius +=5; 
+        bal[y].dx += Math.random() * 5;
+        
       } else {
         if(bal[i].radius > bal[i].startradius){
           bal[i].radius += -5;
