@@ -86,7 +86,7 @@ function animate() {
         //bal[i].x += +1;
         bal[i].dx += Math.random() * 5;
         bal[i].radius +=5; 
-        bal[y].dx += Math.random() * 5;
+        bal[i].dx += Math.random() * 5;
         
       } else {
         if(bal[i].radius > bal[i].startradius){
