@@ -145,8 +145,8 @@ function main() {
 }
 
 window.onload = function() {
-    const chatboxInput = document.getElementById("chatboxInput");
-    chatboxInput.value = replyList[0];
+    //const chatboxInput = document.getElementById("chatboxInput");
+    //chatboxInput.value = replyList[0];
 }
 /*
 (function($) {
