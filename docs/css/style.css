@@ -338,3 +338,21 @@ details[open] > summary, details[open] > summary > h1 {
   width: 100%;
   height: 100%;
   }
+  .blue {
+    color:rgb(4, 83, 255)
+  }
+
+  .center{
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  }
+
+  .centerbutton {
+    padding:1em ;
+    font-size: larger;
+    z-index: 99;
+    border-radius: .5em;
+  }
+
